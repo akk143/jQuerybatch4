@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text</title>
+</head>
+<body>
+
+    <h1>Welcome to <u> jQuery </u></h1>
+    <h1>This is awsome js library</h1>
+
+    <hr/>
+
+    <h2>Welcome to <u> jQuery Library</u></h2>
+    <h2>Here is awsome js library</h2>
+
+    <hr/>
+
+    <h3>Welcome to <u> jQuery Addon</u></h3>
+    <h3>This is awsome js library</h3>
+
+    <hr/>
+
+    <h4>Welcome to <u> jQuery Plugin</u></h4>
+    <h4>Here is awsome js library</h4>
+
+    <hr/>
+
+
+
+
+    <script type="text/javascript" src="./libs/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+
+        // =>html
+
+       $(document).ready(function(){
+
+        // console.log($('h1'));
+
+        const getfirst = $('h1:first').html();
+        // console.log(getfirst);
+
+        // const getlast = $('h1:last').html();
+        // console.log(getlast);
+
+        $('h1').html(getfirst);  // Welcome to jQuery
+
+       });
+
+       // =>text
+
+       $(document).ready(function(){
+
+        const geth2 = $('h2:first').text();
+        // console.log(geth2);
+
+        $('h2:last').text(geth2);  // Welcome to jQuery Library
+
+       });
+
+       // =>html() to text()
+
+       $(document).ready(function(){
+
+        const geth3 = $('h3:first').html();
+        // console.log(geth3);
+
+        $('h3:last').text(geth3);  // Welcome to <u> jQuery Addon</u>
+
+       });
+
+        // =>html() to text()
+
+        $(document).ready(function(){
+
+        const geth4 = $('h4:first').text();
+        // console.log(geth4);
+
+        $('h4:last').html(geth4);  // Welcome to jQuery Plugin
+
+        });
+
+
+    </script>
+
+</body>
+</html>

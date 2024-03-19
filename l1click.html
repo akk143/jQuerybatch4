@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click</title>
+</head>
+<body>
+
+    <h1>Welcome to jQuery</h1>
+
+    <h3>This is awsome js library</h3>
+
+    <button type="button" id="clickme">Click Me</button>
+    <button type="button" id="dblclick">Double Click Me</button>
+
+    <button type="button" id="singleclk">Single Click Me</button>
+    <button type="submit" id="dblclk">Double Click Me</button>
+
+    <button type="button" id="onclk">Single Click Me</button>
+    <button type="button" id="ondblclk">Double Click Me</button>
+
+    
+    <script src="./libs/jquery-3.7.1.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        // console.log("hay");
+
+        // $(document).ready(function(){
+        //     console.log("hi");
+        // });
+
+        // $(window.document).ready(function(){
+        //     console.log("hay i am working");
+        // });
+
+        // jQuery(document).ready(function(){
+        //     console.log("Save Myanmar");
+        // });
+
+        // jQuery(window.document).ready(function(){
+        //     console.log("Pray Myanmar");
+        // });
+
+       $(document).ready(function(){
+
+        // document.getElementById('');
+        // document.getElementsByClassName('.'); // HTML Collection
+        // document.getElementsByTagName(''); // HTML Collection
+
+        // document.querySelector('#'); 
+        // document.querySelector('.'); 
+        // document.querySelector(''); 
+
+        // document.querySelectorAll('#'); // NodeList
+        // document.querySelectorAll('.'); // NodeList
+        // document.querySelectorAll(''); // NodeList
+
+        // $('#');
+        // $('.');
+        // $('');
+
+        // document.getElementById("clickme").addEventListener('click',function(){
+        //     console.log('hi');
+        // });
+
+        $('#clickme').click(function(){
+            console.log('hello sir');
+        });
+
+        $('#dblclick').dblclick(function(){
+            console.log('hello sir i am working');
+        });
+
+
+
+        $('#singleclk').bind('click',function(){
+            console.log('i am single by bind method');
+        });
+
+        $('#dblclk').bind('dblclick',function(){
+            // console.log('i am double click by bind method');
+
+            console.log('i am double click by bind method = '+ this.type); // result = submit (type attribute)
+            console.log('i am double click by bind method = '+ this.nodeName); // result = BUTTON (it's mean tag name)
+        });
+
+
+
+        $('#onclk').on('click',function(){
+            console.log('i am single click by on method');
+        });
+
+        $('#ondblclk').on('dblclick',function(){
+            console.log('i am double click by on method');
+        });
+
+       });
+
+    </script>
+
+</body>
+</html>
