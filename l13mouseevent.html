@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Event</title>
+    <style type="text/css">
+
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 600px;
+            background-color: #f4f4f4;
+
+            padding: 20px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: steelblue;
+        }
+      
+ 
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        
+        <div class="box"></div>
+
+    </div>
+   
+  
+
+    <script type="text/javascript" src="./libs/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+
+       $(document).ready(function(){
+
+        // => mouseenter() Function action on self
+
+        // $('.box').mouseenter(function(){
+        //     console.log('i am working by using mouseenter');
+        // });
+      
+
+
+        // => mouseover() Function action on self
+
+        //  $('.box').mouseover(function(){
+        //     console.log('i am working by using mouseover');
+        // });
+
+
+
+        // => mouseleave() Function action on self
+
+        //  $('.container').mouseleave(function(){
+        //     console.log('i am working by using mouseleave');
+        // });
+
+
+
+         // => mouseout() Function action on self and on child
+
+        //  $('.container').mouseout(function(){
+        //     console.log('i am working by using mouseout');
+        // });
+
+
+
+        // => mousehover(in function)
+        // => mousehover(in function, out function) Function action on self
+
+        //  $('.box').hover(function(){
+        //     $(this).css('background-color','yellow');
+        //  });
+
+        //  $('.box').hover(function(){
+        //     $(this).css('background-color','green');
+        //  },function(){
+        //     $(this).css('background-color','violet');
+        //  });
+
+
+
+        // => mousedown 
+
+        // $('.box').mousedown(function(){
+        //     console.log("i am working by mousedown");
+        // });
+
+
+         // => mouseup 
+
+        // $('.box').mouseup(function(){
+        //     console.log("i am working by mouseup");
+        // });
+
+       });
+
+    </script>
+
+</body>
+</html>
