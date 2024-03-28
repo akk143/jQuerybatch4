@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even and Odd</title>
+    <style type="text/css">
+
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: column;
+        }
+        .container{
+            width: 900px;
+            background-color: #f4f4f4;
+
+            display: flex;
+
+            padding: 20px;
+        }
+        .box{
+            width: 150px;
+            height: 300px;
+        }
+        .square1{
+            background-color: green;
+        }
+        .square2{
+            background-color: blue;
+        }
+        .square3{
+            background-color: yellow;
+        }
+        .square4{
+            background-color: violet;
+        }
+        .square5{
+            background-color: brown;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="div">
+        <h1>even & odd</h1>
+        <p>this is awsome jQuery version 3.7.1</p>
+    </div>
+
+   <div class="container">
+
+        <div class="box square1">Box 1</div>
+        <hr/>
+        <div class="box square2">Box 2</div>
+        <hr/>
+        <div class="box square3">Box 3</div>
+        <hr/>
+        <div class="box square4">Box 4</div>
+        <hr/>
+        <div class="box square5">Box 5</div>
+    
+   </div>
+
+   <div>
+      <button type="button" id="even-btn">Even Button</button>
+      <button type="button" id="odd-btn">Odd Button</button>
+      <button type="button" id="slice-btn">Slice Button</button>
+   </div>
+
+
+
+
+    <script type="text/javascript" src="./libs/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+
+       $(document).ready(function(){
+
+        // => even() start from index0
+
+        // $('#even-btn').click(function(){
+        //     $('.box').even().css('background-color','black');
+        // });
+
+         // => odd() start from index0
+
+        //  $('#odd-btn').click(function(){
+        //     $('.box').odd().css('background-color','black');
+        // });
+
+         // => slice() (start index,length)
+
+        //  $('#slice-btn').click(function(){
+        //     $('.box').slice(1,4).css('background-color','black');
+        // });
+
+        $('#slice-btn').click(function(){
+            $('.box').slice(0,3).css('background-color','black');
+        });
+
+        });
+
+    </script>
+     
+     
+</body>
+</html>
