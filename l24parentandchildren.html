@@ -66,7 +66,7 @@
    </div>
 
    <div>
-    <p>Hay guys!! What's your plan for tomorrow.</p>
+    <p>Hey guys!! What's your plan for tomorrow.</p>
    </div>
 
 
@@ -77,6 +77,58 @@
     <script type="text/javascript">
 
        $(document).ready(function(){
+
+        // => parent
+
+        // $('.box').click(function(){
+        //     $(this).parent().css({
+        //         backgroundColor:"darkblue",
+        //         boxShadow:"5px 5px 10px rgba(0,0,0,0.5)"
+        //     });
+        // });
+
+        // => children
+        
+        // $('.container').click(function(){
+        //     $(this).children().css("backgroundColor","blue");
+        // });
+
+        // $('.container').click(function(){
+        //     $(this).children('.square1').css("backgroundColor","blue");
+        // });
+
+        // $('.container').click(function(){
+        //     $(this).children('.square3,.square5').css("backgroundColor","gray");
+        // });
+
+
+        // => siblings
+
+        // $('.square1').click(function(){
+        //     $(this).siblings().css("backgroundColor","blue");
+        // });
+
+        // $('.square1').click(function(){
+        //     $(this).siblings('.square3').css("backgroundColor","red");
+        // });
+
+        // $('.square1').click(function(){
+        //     $(this).siblings('.square2,.square4').css("backgroundColor","black");
+        // });
+
+        // => even / odd / nth
+
+        // $('.square1').click(function(){
+        //     $('.box:nth-of-type(odd)').css("backgroundColor","black");
+        // });
+
+        // $('.square1').click(function(){
+        //     $('.box:nth-of-type(even)').css("backgroundColor","black");
+        // });
+
+        $('.square1').click(function(){
+            $('.box:nth-of-type(5)').css("backgroundColor","black");
+        });
 
         });
 
